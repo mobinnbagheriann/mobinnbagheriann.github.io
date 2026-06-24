@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Research interests of Mobin Bagherian: mechanistic interpretability, language and multimodal models, emergence, and artificial life."
+    >
+    <title>Research Interests | Mobin Bagherian</title>
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body class="detail-page">
+    <header class="site-header">
+      <a class="site-mark" href="../">Mobin Bagherian</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="../">Home</a>
+        <a href="../research/">Research Interests</a>
+        <a href="../publications/">Publications</a>
+        <a href="../cv/">CV</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="false" data-theme-toggle>
+        <span aria-hidden="true"></span>
+      </button>
+    </header>
+
+    <main class="detail-main" id="top">
+      <section class="cv-hero">
+        <p class="kicker">Research</p>
+        <h1>Research Interests</h1>
+      </section>
+
+      <section class="cv-section">
+        <div class="cv-section-title">
+          <span class="cv-section-mark" aria-hidden="true"></span>
+          <h2>How I Arrived Here</h2>
+        </div>
+        <div class="statement-block">
+          <p>
+            I first became interested in physics as a way to understand the
+            universe and reality. Over time, that curiosity moved inward: our
+            only medium for understanding is the brain, so the nature of
+            intelligence became the more fundamental question for me.
+          </p>
+          <p>
+            In that broader sense, I see AI as one concrete way to study
+            intelligence. By building and analyzing systems, we can ask how
+            simple rules, objectives, and interactions give rise to complex
+            structure and behavior.
+          </p>
+          <p>
+            This is also why I am drawn to mechanistic interpretability. It
+            offers a way to move from observing intelligent behavior to asking
+            what internal representations and computations make that behavior
+            possible.
+          </p>
+        </div>
+      </section>
+
+      <section class="cv-section">
+        <div class="cv-section-title">
+          <span class="cv-section-mark" aria-hidden="true"></span>
+          <h2>Current Interests</h2>
+        </div>
+        <div class="research-grid">
+          <article class="research-card">
+            <h3>Mechanistic interpretability of AI systems</h3>
+            <p>
+              I am interested in understanding what mechanisms emerge inside
+              trained models and how those mechanisms support behavior. I find
+              intervention-based analysis especially compelling because it asks
+              whether a proposed explanation is causally responsible, not only
+              correlated with the output.
+            </p>
+          </article>
+
+          <article class="research-card">
+            <h3>Language and multimodal models</h3>
+            <p>
+              LLMs and vision-language models are useful places to study
+              representation, grounding, reasoning, and generalization. My work
+              so far has focused on counting, grounding, binding, and internal
+              representations in these systems.
+            </p>
+          </article>
+
+          <article class="research-card">
+            <h3>Emergence in complex systems</h3>
+            <p>
+              I am interested in how simple local rules, interaction, and
+              persistence-like objectives can produce complex structure and
+              behavior. This question connects artificial systems, biological
+              evolution, and learning dynamics.
+            </p>
+          </article>
+
+          <article class="research-card">
+            <h3>Artificial life</h3>
+            <p>
+              I am interested in intelligence as a spectrum that is continuous
+              with life, rather than as a sharply separate capacity. From this
+              view, artificial life is a way to ask how adaptive behavior,
+              agency, and intelligence-like structure can arise from simple
+              rules, repeated interaction, and persistence pressures.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="cv-section">
+        <div class="cv-section-title">
+          <span class="cv-section-mark" aria-hidden="true"></span>
+          <h2>Near-Term Direction</h2>
+        </div>
+        <div class="statement-block">
+          <p>
+            More generally, I want to study how simple objectives, learning
+            dynamics, and repeated interactions can produce systems that adapt,
+            persist, and develop increasingly rich behavior.
+          </p>
+          <p>
+            I see this as connected to mechanistic interpretability. One side
+            studies mechanisms that have already emerged inside large AI
+            systems; the other asks what conditions allow such mechanisms to
+            emerge in the first place.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Mobin Bagherian</p>
+      <a href="mailto:mobinbagherian003@gmail.com">mobinbagherian003@gmail.com</a>
+    </footer>
+
+    <script>
+      const root = document.documentElement;
+      const themeButton = document.querySelector("[data-theme-toggle]");
+      const storedTheme = window.localStorage.getItem("theme");
+      const initialTheme = storedTheme || "dark";
+
+      root.dataset.theme = initialTheme;
+      themeButton.setAttribute("aria-pressed", String(initialTheme === "light"));
+
+      themeButton.addEventListener("click", () => {
+        const nextTheme = root.dataset.theme === "dark" ? "light" : "dark";
+        root.dataset.theme = nextTheme;
+        window.localStorage.setItem("theme", nextTheme);
+        themeButton.setAttribute("aria-pressed", String(nextTheme === "light"));
+      });
+    </script>
+  </body>
+</html>

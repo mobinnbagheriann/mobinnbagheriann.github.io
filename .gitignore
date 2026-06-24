@@ -1,0 +1,13 @@
+.DS_Store
+Thumbs.db
+*.log
+assets/research-visual.jpg
+assets/research-visual.png
+assets/*.aux
+assets/*.out
+assets/publications/latent-count-natural.png
+cv/*.aux
+cv/*.log
+cv/*.out
+cv/*.pdf
+cv/missfont.log

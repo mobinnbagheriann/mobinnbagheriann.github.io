@@ -1,0 +1,101 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.62in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+
+\definecolor{accent}{HTML}{0B4F6C}
+\definecolor{textgray}{HTML}{444444}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+\renewcommand{\section}[1]{\vspace{8pt}{\large\bfseries\color{accent}#1}\par\vspace{2pt}\hrule\vspace{5pt}}
+\let\olditemize\itemize
+\let\endolditemize\enditemize
+\renewenvironment{itemize}{\olditemize\setlength{\itemsep}{2pt}\setlength{\topsep}{2pt}\setlength{\leftmargin}{1.1em}}{\endolditemize}
+
+\newcommand{\entry}[4]{
+  \textbf{#1}\hfill #2\\
+  \textit{#3}\hfill \textit{#4}
+}
+
+\begin{document}
+
+{\LARGE \textbf{Mobin Bagherian}}\\
+Final-year undergraduate student, Computer Engineering, Sharif University of Technology, Tehran, Iran\\
+\href{mailto:mobinbagherian003@gmail.com}{mobinbagherian003@gmail.com} \quad
+\href{https://www.linkedin.com/in/mobinbagherian}{LinkedIn} \quad
+\href{https://github.com/mobinnbagheriann}{GitHub} \quad
+\href{https://scholar.google.com/citations?user=0zOzh2QAAAAJ&hl=en}{Google Scholar}
+
+\section{Research Interests}
+Artificial life; emergence in complex adaptive systems; mechanistic interpretability of large language and vision-language models; causal interventions, activation patching, and circuit-level analysis.
+
+\section{Education}
+\entry{Sharif University of Technology}{2022 -- Present}{B.Sc. in Computer Engineering}{Tehran, Iran}
+
+\entry{Shahid Hasheminejad (Sampad)}{2019 -- 2022}{Diploma in Math-Physics}{Mashhad, Iran}
+
+\section{Research Experience}
+\entry{Research Intern}{Jun. 2026 -- Present}{Brain x Machine Intelligence Lab @ KAIST}{Hybrid}
+\begin{itemize}
+  \item Supervised by Prof. Sang Wan Lee.
+\end{itemize}
+
+\entry{Research Assistant, Sharif Machine Learning Lab}{Aug. 2025 -- Present}{Sharif University of Technology, supervised by Prof. Mahdieh Soleymani Baghshah}{Tehran, Iran}
+\begin{itemize}
+  \item Study mechanistic interpretability of LLMs and multimodal LLMs, focusing on counting, grounding, object binding, and hidden representations.
+  \item Analyze how models encode latent count information across tokens and layers, and how count representations support final answers.
+  \item Investigate hidden Grounding IDs: object-level identifiers that mediate binding under external cues and ambiguous visual contexts.
+  \item Use causal interventions, activation patching, ablations, and mediation-style analyses to test whether discovered mechanisms drive model behavior.
+  \item Results include work accepted to CVPR 2026, ICML 2026, and Findings of ACL 2026.
+\end{itemize}
+
+\entry{Research Assistant, Robust and Interpretable Machine Learning Lab}{Apr. 2025 -- Jul. 2025}{Supervised by Prof. Mohammad Hossein Rohban}{Tehran, Iran}
+\begin{itemize}
+  \item Worked on virtual staining of histopathological images with generative models.
+\end{itemize}
+
+\section{Work Experience}
+\entry{Investment Analyst, Wallex}{Nov. 2023 -- Jun. 2024}{Part-time}{Tehran, Iran}
+\begin{itemize}
+  \item Analyzed the tech stack of crypto projects and conducted fundamental analysis in the blockchain industry.
+\end{itemize}
+
+\entry{Associate VP, Divar}{Jun. 2023 -- Aug. 2023}{Internship}{Tehran, Iran}
+
+\entry{Student Intern, Mobile Communication Company of Iran (Hamrahe Aval)}{Dec. 2022 -- May 2023}{Internship}{Tehran, Iran}
+\begin{itemize}
+  \item Participated in the first Elites' internship program at Hamrah Academy.
+\end{itemize}
+
+\section{Publications}
+\begin{itemize}
+  \item \textbf{Understanding Counting Mechanisms in Large Language and Vision-Language Models.} Equal contribution, CVPR 2026.
+  \item \textbf{Uncovering Grounding IDs: How External Cues Shape Multi-Modal Binding.} Equal contribution, ICML 2026.
+  \item \textbf{Mechanistic Interpretability of Large-Scale Counting in LLMs through a System-2 Strategy.} Findings of ACL 2026.
+  \item \textbf{Causal Attribution via Activation Patching.} arXiv preprint, 2026.
+  \item \textbf{Eye-Q: A Multilingual Benchmark for Visual Word Puzzle Solving and Image-to-Phrase Reasoning.} arXiv preprint, 2026.
+\end{itemize}
+
+\section{Teaching Experience}
+\begin{itemize}
+  \item \textbf{Teaching Assistant, Advanced Reinforcement Learning} (graduate course), Spring 2026.
+  \item \textbf{Teaching Assistant, Deep Learning} (graduate course).
+  \item \textbf{Teaching Assistant, Stochastic Processes} (graduate course).
+  \item \textbf{Teaching Assistant, Artificial Intelligence}, 2024 -- Present. Responsible for reinforcement learning homework and student support.
+  \item \textbf{Teaching Assistant, Probability and Statistics}, 2024 -- Present.
+  \item \textbf{Instructor, Astronomy and Astrophysics Olympiad}, 2021 -- 2022. Taught data analysis methods including linear models and clustering.
+\end{itemize}
+
+\section{Honors and Awards}
+\begin{itemize}
+  \item \textbf{Gold Medalist}, 16th National Olympiad of Astronomy and Astrophysics, 2021.
+  \item \textbf{Silver Medalist}, 15th National Olympiad of Astronomy and Astrophysics, 2020.
+\end{itemize}
+
+\section{Languages}
+Persian (native), English (fluent), Arabic (basic).
+
+\end{document}
